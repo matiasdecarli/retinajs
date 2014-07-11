@@ -61,9 +61,8 @@
 
         return false;
     };
-
-
-    var regexMatch = /\.\w+$/;
+    
+    var regexMatch = /\.[^.]*$/;  
     function suffixReplace (match) {
         return config.retinaImageSuffix + match;
     }
